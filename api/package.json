@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon index.ts",
     "seed": "ts-node fixtures.ts",
-    "build": "tsc"
+    "build": "npx tsc"
   },
   "keywords": [],
   "author": "",
