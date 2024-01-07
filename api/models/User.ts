@@ -1,5 +1,5 @@
 import {Schema, model, Model, HydratedDocument} from "mongoose"
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import {randomUUID} from "crypto";
 import {IUser} from "../type";
 
