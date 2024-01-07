@@ -10,7 +10,13 @@ import commentRouter from "./routers/comments";
 const app = express();
 const port = 8000;
 
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://deploy-mern-1whq.vercel.app"],
+        methods:["POST", "GET", "DELETE"],
+        credentials: true
+    }
+));
 app.use(express.static('public'));
 app.use(express.json());
 app.use('/posts', postRouter);
